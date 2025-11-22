@@ -81,7 +81,15 @@ const WindowWrapper = (Component, windowKey) => {
          } else {
             element.style.display = "none";
          }
-      }, [isOpen, isMinimized, isMaximized, windowState]); 
+
+         return () => {
+            const tracker = Draggable.get(element);
+            if (tracker) {
+               tracker.kill();
+            }
+            gsap.killTweensOf(element);
+         };
+      }, [isOpen, isMinimized, isMaximized]); 
 
       if (!windowState) return null;
 
