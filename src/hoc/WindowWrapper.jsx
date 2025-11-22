@@ -34,10 +34,10 @@ const WindowWrapper = (Component, windowKey) => {
             
             else {
                if (!Draggable.get(element)?.isDragging) {
-                   gsap.to(element, {
-                     scale: 1, opacity: 1, y: 0, duration: 0.4,
-                     ease: "power3.out", overwrite: "auto"
-                   });
+                  gsap.to(element, {
+                  scale: 1, opacity: 1, y: 0, duration: 0.4,
+                  ease: "power3.out", overwrite: "auto"
+                  });
                }
             }
 
