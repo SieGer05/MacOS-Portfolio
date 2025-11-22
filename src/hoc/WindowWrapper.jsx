@@ -4,8 +4,6 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { Draggable } from "gsap/Draggable";
 
-gsap.registerPlugin(Draggable);
-
 const WindowWrapper = (Component, windowKey) => {
    const Wrapped = (props) => {
       const { focusWindow, toggleMaximize, windows } = useWindowStore();
