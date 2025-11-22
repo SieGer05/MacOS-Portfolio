@@ -101,28 +101,28 @@ const blogPosts = [
 
 const techStack = [
   {
+    category: "CyberSecurity",
+    items: ["Wazuh (SIEM)", "Splunk", "MITRE ATT&CK"],
+  },
+  {
+    category: "Sys & Net",
+    items: ["Linux Hardening", "VPN IPsec", "Docker", "GNS3"],
+  },
+  {
+    category: "App Sec",
+    items: ["OWASP Top 10", "CIS Benchmarks", "JWT & Auth"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["React.js", "TypeScript", "Tailwind CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Java Spring", "Microservices", "Python FastAPI"],
   },
   {
-    category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
-  },
-  {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "AI & Chain",
+    items: ["Machine & Deep Learning", "Blockchain"],
   },
 ];
 
@@ -493,14 +493,14 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
+  imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMinimized: false, isMaximized: false },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
