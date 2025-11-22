@@ -4,18 +4,22 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { Draggable } from "gsap/Draggable";
 
+gsap.registerPlugin(Draggable);
 
 const WindowWrapper = (Component, windowKey) => {
    const Wrapped = (props) => {
       const { focusWindow, toggleMaximize, windows } = useWindowStore();
       const windowState = windows[windowKey];
-      
-      if (!windowState) return null;
-
-      const { isOpen, zIndex, isMaximized, isMinimized } = windowState;
       const ref = useRef(null);
 
+      const isOpen = windowState?.isOpen ?? false;
+      const zIndex = windowState?.zIndex ?? 0;
+      const isMaximized = windowState?.isMaximized ?? false;
+      const isMinimized = windowState?.isMinimized ?? false;
+
       useGSAP(() => {
+         if (!windowState) return; 
+         
          const element = ref.current;
          if (!element) return;
 
@@ -32,10 +36,10 @@ const WindowWrapper = (Component, windowKey) => {
             
             else {
                if (!Draggable.get(element)?.isDragging) {
-                  gsap.to(element, {
+                   gsap.to(element, {
                      scale: 1, opacity: 1, y: 0, duration: 0.4,
                      ease: "power3.out", overwrite: "auto"
-                  });
+                   });
                }
             }
 
@@ -51,7 +55,7 @@ const WindowWrapper = (Component, windowKey) => {
                      top: 40,             
                      left: -2000,         
                      width: 5000,         
-                     height: "150%"      
+                     height: "150%"       
                   },
 
                   onDragStart: function() {
@@ -77,7 +81,9 @@ const WindowWrapper = (Component, windowKey) => {
          } else {
             element.style.display = "none";
          }
-      }, [isOpen, isMinimized, isMaximized]);
+      }, [isOpen, isMinimized, isMaximized, windowState]); 
+
+      if (!windowState) return null;
 
       const sizeClasses = isMaximized 
          ? "maximized fixed inset-0 w-full h-full rounded-none z-[9999] !transform-none" 
