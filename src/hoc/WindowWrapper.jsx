@@ -45,7 +45,7 @@ const WindowWrapper = (Component, windowKey) => {
                Draggable.create(element, {
                   type: "x,y",
                   inertia: true,
-                  trigger: ".window-header",
+                  trigger: element.querySelector(".window-header"),
                   allowEventDefault: true,
                   onPress: () => focusWindow(windowKey),
                   
