@@ -77,25 +77,27 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    date: "Nov 8, 2025",
+    title: "OWASP Top 10 2025: The List That Keeps Security Folks Awake",
+    image: "/images/blog-owasp.webp",
+    category: "Web Security",
+    link: "https://www.linkedin.com/posts/djili-mohamed-amine-5017b01a0_owasp-cybersecurity-infosec-activity-7392982372570382336-IrtZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8akdEBjeeIxBIVUPFmDSX-vuqma8NEWoI",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    date: "March 15, 2024",
+    title: "Protection Against Social Engineering: A Real-World Case Study",
+    image: "/images/blog-phishing.png",
+    category: "Social Engineering",
+    link: "https://www.linkedin.com/posts/djili-mohamed-amine-5017b01a0_exemple-ding%C3%A9nierie-sociale-activity-7179213652846084099--Ejh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8akdEBjeeIxBIVUPFmDSX-vuqma8NEWoI",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    date: "Feb 15, 2024",
+    title: "Does HTTPS Mean Secure? Debunking Common Web Security Myths",
+    image: "/images/blog-https.png",
+    category: "Web Security",
+    link: "https://www.linkedin.com/posts/djili-mohamed-amine-5017b01a0_cybersecurity-networking-security-activity-7161774264512196608-vnSl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8akdEBjeeIxBIVUPFmDSX-vuqma8NEWoI",
   },
 ];
 
