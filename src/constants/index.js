@@ -85,7 +85,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    date: "Mars 15, 2024",
+    date: "March 15, 2024",
     title: "Protection Against Social Engineering: A Real-World Case Study",
     image: "/images/blog-phishing.png",
     category: "Social Engineering",
