@@ -378,10 +378,19 @@ body {
    }
 
    #txtfile {
-      @apply w-md absolute top-36 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+      @apply fixed w-[550px]! h-[680px] bg-transparent shadow-2xl rounded-xl overflow-hidden;
+      
+      @apply top-[10%] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-32 md:top-12;
+      
+      box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.35);
+      
+      & > div {
+         @apply h-full;
+      }
 
-      h2 {
-         @apply font-bold text-sm text-center w-full;
+      &.maximized {
+         @apply !w-full !h-full !top-0 !left-0 !right-0 !bottom-0 !rounded-none !transform-none;
+         box-shadow: none; 
       }
    }
 
