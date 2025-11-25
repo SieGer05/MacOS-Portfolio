@@ -76,7 +76,7 @@ function Finder() {
             </div>
 
             <ul 
-               className='flex-1 p-4 grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] auto-rows-max content-start gap-1 overflow-y-auto'
+               className='content'
                onClick={handleBackgroundClick}
             >
                {activeLocation?.children.map((item) => {

@@ -353,7 +353,7 @@ body {
       }
 
       .content {
-         @apply flex-1 p-4 bg-white overflow-y-auto grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-2 content-start;
+         @apply flex-1 p-4 grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] auto-rows-max content-start gap-1 overflow-y-auto;
 
          li {
             @apply relative flex flex-col items-center justify-start p-2 rounded-md transition-colors cursor-default h-fit;
