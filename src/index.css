@@ -395,22 +395,25 @@ body {
    }
 
    #imgfile {
-      @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+   @apply fixed w-[800px] h-[600px] bg-[#f6f6f6] shadow-2xl rounded-xl overflow-hidden;
+   
+   @apply top-[10%] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-40 md:top-16;
+   
+   box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.35);
 
-      #window-header {
-         p {
-         @apply font-bold text-[#5f6266];
-         }
-      }
+   & > div {
+      @apply h-full;
+   }
 
-      .preview {
-         @apply p-2 bg-gray-200 max-h-[70vh];
-
-         img {
-         @apply w-full h-fit object-contain object-center;
-         }
+   &.maximized {
+      @apply !w-full !h-full !top-0 !left-0 !right-0 !bottom-0 !rounded-none !transform-none;
+      box-shadow: none;
+      
+      & > div {
+         @apply w-full h-full;
       }
    }
+}
 
    #home {
       @apply relative z-0 max-sm:hidden;
