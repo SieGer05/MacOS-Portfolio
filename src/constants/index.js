@@ -230,7 +230,7 @@ const WORK_LOCATION = {
       name: "Fennec - AI Security Audit Platform",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5",
+      position: "top-5 left-[50%] -translate-x-1/2",
       windowPosition: "top-[5vh] left-5", 
       children: [
         {
@@ -283,7 +283,7 @@ const WORK_LOCATION = {
       name: "LogementCert - Blockchain Housing",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-5 left-[40%] -translate-x-1/2",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
@@ -327,7 +327,7 @@ const WORK_LOCATION = {
       name: "SecureVault - Military Grade Encryption",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-5 left-[60%] -translate-x-1/2",
       windowPosition: "top-[33vh] left-7",
       children: [
         {
