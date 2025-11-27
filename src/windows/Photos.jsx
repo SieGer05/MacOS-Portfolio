@@ -50,7 +50,7 @@ function Photos() {
                            })
                         }
                      >
-                        <img src={img} alt={`Gallery image ${id}`} loading="lazy" />
+                        <img src={img} alt={`Gallery image ${id}`} loading="lazy" className='cursor-pointer' />
                      </li>
                   ))}
                </ul>
