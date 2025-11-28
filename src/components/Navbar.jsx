@@ -42,7 +42,9 @@ const Navbar = () => {
                ))}
             </ul>
 
-            <time className="text-sm font-medium text-black min-w-[140px] text-right cursor-default select-none">
+            <time 
+               dateTime={currentTime.toISOString()}
+               className="text-sm font-medium text-black min-w-[140px] text-right cursor-default select-none">
                {currentTime.format('ddd MMM D h:mm A')}
             </time>
          </div>
